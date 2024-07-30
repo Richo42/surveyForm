@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 id="title" class="text-center">Formulario de encuesta freeCodeCamp</h1>
+            <h1 id="title">Formulario de encuesta freeCodeCamp</h1>
             <p id="description" class="description text-center">
                 Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.
             </p>
@@ -23,6 +23,7 @@
                     id="name"
                     class="form-control"
                     placeholder="Introduzca su Nombre"
+                    autocomplete="given-name"
                     required
                 />
             </div>
@@ -34,6 +35,7 @@
                     id="email"
                     class="form-control"
                     placeholder="Introduzca su Correo"
+                    autocomplete="off"
                     required
                 />
             </div>
@@ -52,7 +54,7 @@
             </div>
             <div class="form-group">
                 <p>¿Qué Opción Describe Mejor su Rol Actual?</p>
-                <select id="dropdown" name="role" class="form-control" required>
+                <select id="dropdown" name="role" class="form-control" required title="Seleccione su Rol Actual">
                     <option disabled selected value>Seleccione su Rol Actual</option>
                     <option value="student">Estudiante</option>
                     <option value="job">Trabajo de Tiempo Completo</option>
@@ -91,7 +93,7 @@
             </div>
             <div class="form-group">
                 <p>¿Cuál es tu Función Favorita de freeCodeCamp?</p>
-                <select id="most-like" name="mostLike" class="form-control" required>
+                <select id="most-like" name="mostLike" class="form-control" required title="Seleccione una Opcion">
                     <option disabled selected value>Seleccione una Opción</option>
                     <option value="challenges">Desafíos</option>
                     <option value="projects">Proyectos</option>
